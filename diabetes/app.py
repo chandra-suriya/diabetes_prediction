@@ -23,7 +23,7 @@ def predict():
         res='Diabetes occured'
     else:
         res= 'Diabetes Not occured'
-    return render_template('index.html', prediction_text='diabetes prediction  {}'.format(output))
+    return render_template('index.html', prediction_text='diabetes prediction  {}'.format(res))
 
 
 if __name__ == "__main__":
