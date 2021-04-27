@@ -19,7 +19,10 @@ def predict():
     prediction = model.predict(final_features)
 
     output = round(prediction[0], 2)
-
+    if output ==1:
+        res='Diabetes occured'
+    else:
+        res= 'Diabetes Not occured'
     return render_template('index.html', prediction_text='diabetes prediction  {}'.format(output))
 
 
